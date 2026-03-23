@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Pattern Generator</h2>
+
+        <label>Select Pattern:</label>
+        <select id="patternType">
+            <option value="left">Left Triangle</option>
+            <option value="inverted">Inverted Pyramid</option>
+        </select>
+
+        <label>Enter Symbol:</label>
+        <input type="text" id="symbol" maxlength="1" value="*">
+
+        <label>Enter Rows:</label>
+        <input type="number" id="rows" value="5" min="1">
+
+        <button onclick="generatePattern()">Generate Pattern</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
