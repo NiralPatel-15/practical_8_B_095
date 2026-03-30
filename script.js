@@ -1,6 +1,6 @@
 function generatePattern() {
   const type = document.getElementById("patternType").value;
-  const symbol = document.getElementById("symbol").value || "*";
+  const symbol = document.getElementById("symbol").value || "+";
   const rows = parseInt(document.getElementById("rows").value);
 
   let result = "";
